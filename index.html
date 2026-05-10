@@ -381,24 +381,28 @@
           </div>
         </div>
 
-        <form class="contact-form neu-card" id="contactForm" data-aos="fade-left">
+        <form action="https://formsubmit.co/sabbirkhan.dev@gmail.com" method="POST" class="contact-form neu-card" data-aos="fade-left">
           <div class="form-group">
             <label for="name">Your Name</label>
-            <input type="text" id="name" class="form-control" placeholder="Sabbir" required>
+            <input type="text" name="name" id="name" class="form-control" placeholder="Sabbir" required>
           </div>
           <div class="form-group">
             <label for="email">Your Email</label>
-            <input type="email" id="email" class="form-control" placeholder="sabbir@example.com" required>
+            <input type="email" name="email" id="email" class="form-control" placeholder="sabbir@example.com" required>
           </div>
           <div class="form-group">
             <label for="subject">Subject</label>
-            <input type="text" id="subject" class="form-control" placeholder="Project Inquiry" required>
+            <input type="text" name="subject" id="subject" class="form-control" placeholder="Project Inquiry" required>
           </div>
           <div class="form-group">
             <label for="message">Message</label>
-            <textarea id="message" class="form-control" placeholder="Your message here..." required></textarea>
+            <textarea name="message" id="message" class="form-control" placeholder="Your message here..." required></textarea>
           </div>
           <button type="submit" class="neu-btn neu-btn-primary">Send Message <i class="fas fa-paper-plane"></i></button>
+          <input type="hidden" name="_captcha" value="false">
+          <p id="success-message" style="display:none; margin-top:15px; color:#4CAF50;">
+            Message sent successfully!
+          </p>
         </form>
       </div>
       <div class="map-container" data-aos="fade-up">

@@ -295,3 +295,20 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 });
+const form = document.querySelector(".contact-form");
+const successMessage = document.getElementById("success-message");
+
+form.addEventListener("submit", async function (e) {
+  e.preventDefault();
+
+  const formData = new FormData(form);
+
+  await fetch(form.action, {
+    method: "POST",
+    body: formData,
+  });
+
+  successMessage.style.display = "block";
+
+  form.reset();
+});
