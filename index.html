@@ -438,9 +438,11 @@
         <div class="footer-newsletter">
           <h4>Newsletter</h4>
           <p>Subscribe to get latest updates on new projects and blog posts.</p>
-          <form class="newsletter-form" id="newsletterForm">
-            <input type="email" placeholder="Your email" required>
+          <form action="https://formsubmit.co/sabbirkhan.dev@gmail.com" method="POST" class="newsletter-form" id="newsletterForm">
+            <input type="email" name="email" placeholder="Your email" required>
             <button type="submit" class="neu-btn neu-btn-primary">Subscribe</button>
+            <input type="hidden" name="_subject" value="New Newsletter Subscriber">
+            <input type="hidden" name="_captcha" value="false">
           </form>
         </div>
       </div>
